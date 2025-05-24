@@ -27,3 +27,9 @@ No dependencies except the one provided CDN (`seedrandom`). No ES modules. Runs 
 #### Create an exploiter instance
 ```js
 const exploiter = new ProvablyFairExploiter();
+exploiter.simulateCaseBattle(
+  'YOUR_SERVER_SEED',   // string: the revealed or candidate server seed
+  5,                    // number: number of rounds/cases
+  '2vs2',               // type: '1vs1', '1vs1vs1', '2vs2', '3vs3'
+  false                 // isOld: use false unless the site is running the legacy battle algorithm
+);
